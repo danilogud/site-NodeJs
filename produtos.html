@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Produtos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="style/style.css"rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                <a class="navbar-brand"><img id="logo-navb" src="img/logo-generic.png" class="img-fluid" alt="Responsive image"></a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSuportedContent" aria-controls="navbarSuportetContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse bg-dark" id="navbarSuportetContent" style="z-index:9999"> o id de navbarNav diz respeito ao aria-controls do botão
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quem-somos.html">Quem somos</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="produtos.html">Alfa</a>
+                                <a class="dropdown-item" href="produtos.html">Beta</a>
+                                <a class="dropdown-item" href="produtos.html">Gama</a>
+                                <a class="dropdown-item" href="produtos.html">Delta</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="O que você deseja?">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </header>
+    -->
+        <section class="container pb-5 text-center" id="produtos">
+            <h1 class="p-5">Produtos</h1>
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <div class="card-img-top bg-light text-muted text-center py-5">R$50</div>
+                 <div class="card-body">
+                    <h5 class="card-title">Plano alfa</h5>
+                    <p class="card-text text-center">Plano introdutório com recursos básicos</p>
+                    <a href="#" class="btn btn-info">Contrate</a>
+                 </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-img-top bg-light text-muted text-center py-5">R$90</div>
+             <div class="card-body">
+                <h5 class="card-title">Plano beta</h5>
+                <p class="card-text text-center">Plano com recursos básicos e personalização</p>
+                <a href="#" class="btn btn-info">Contrate</a>
+             </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <div class="card-img-top bg-light text-muted text-center py-5">R$150</div>
+            <div class="card-body">
+                <h5 class="card-title">Plano gama</h5>
+                <p class="card-text text-center">Plano com desenvolvimento de funções específicas e personalização</p>
+                <a href="#" class="btn btn-info">Contrate</a>   
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-center my-5">
+        <div class="card-header bg-secundary text-dark">CONHEÇA NOSSO PLANO EMPRESARIAL
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Plano delta</h5>
+            <p class="card-text col-8 offset-2 text-center">Desenvolvimento completo de software totalmente personalizado às necessidades do cliente</p>
+            <a href="#" class="btn btn-danger">Contrate</a>
+        </div>
+        <div class="card-footer text-muted">Apenas R$199</div>
+    </div>
+</section>
+
+<section id="compare" class="bg-light pb-5">
+    <div class="pb-5 container">
+        <h1 class="pt-5 text-center">Compare os combos</h1>
+        <p class="lead text-muted text-center pb-5">Descubra seu plano</p>
+        <table id="compare_planos" class="table table-striped table-hover table-responsive-sm text-center">
+            <thead>
+                <tr>
+                    <th>#</th><th>Produto</th><th>Configurações básicas</th><th>Personalização</th><th>Funções específicas</th><th>Totalmente personalizado</th><th>Preço</th>
+                </tr>
+            </thead>
+          
+            <tbody>
+            <tr>
+                <th class = "text-center">1</th>
+                <td class="text-center">alfa</td>
+                <td><img src="img/checkbox-g16655e89e_1280.png" class="img-fluid mx-auto d-block" alt="Image"></td>
+                <td class="text-center" ><img src="img/cross-mark-gb607f8ab4_1280.png"></td>
+                <td class="text-center" ><img src="img/cross-mark-gb607f8ab4_1280.png"></td>
+                <td class="text-center" ><img src="img/cross-mark-gb607f8ab4_1280.png"></td>
+                <td class="text-center">50</td>
+            </tr>
+
+            <tr>
+                <th class="text-center">2</th>
+                <td>beta</td>
+                <td class="text-center"><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td class="text-center"><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td class="text-center"><img src="img/cross-mark-gb607f8ab4_1280.png"></td>
+                <td class="text-center"><img src="img/cross-mark-gb607f8ab4_1280.png"></td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <th>3</th>
+                <td>gama</td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td><img src="img/cross-mark-gb607f8ab4_1280.png"></td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <th>4</th>
+                <td>delta</td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td><img src="img/checkbox-g16655e89e_1280.png"></td>
+                <td>150</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer>
+    2022 | Todos os direitos reservados.
+</footer>
+
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

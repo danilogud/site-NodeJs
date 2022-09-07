@@ -1,0 +1,3 @@
+Desenvolvimento de um site fictício para a situação de uma empresa de tecnologia. Temos o index, apresentando a página inicial com informações sobre a empresa e seu foco no mercado. A página quem-somos busca mostrar resumidamente as atuações no ramo. A página de produtos dá atenção às características dos produtos. Por fim, temos a página de contato, que permite ao usuário enviar uma mensagem à empresa.
+
+O desenvolvimento do backend foi feito com NodeJs e MongoDB. Todas as rotas deixam o site funcional. Optamos por fazer com que a situação fictícia de compra de um produto seja feita através da página de contatos, onde o cliente pode explicar a necessidade de seus softwares, sem que se faça um perfil de login na página.

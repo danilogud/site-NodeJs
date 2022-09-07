@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "pt-BR">
+
+<head>
+    <title>Quem Somos</title>
+    <meta name="author" content = "Danilo Gonçalves">
+    <meta charset="UTF-8">
+    <meta name= "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="style/style.css"rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand"><img id="logo-navb" src="img/logo-generic.png" class="img-fluid" alt="Responsive image"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSuportedContent" aria-controls="navbarSuportetContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse bg-dark" id="navbarSuportetContent" style="z-index:9999"> <!--o id de navbarNav diz respeito ao aria-controls do botão-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem-somos.html">Quem somos</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="produtos.html">Alfa</a>
+                            <a class="dropdown-item" href="produtos.html">Beta</a>
+                            <a class="dropdown-item" href="produtos.html">Gama</a>
+                            <a class="dropdown-item" href="produtos.html">Delta</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="O que você deseja?">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="quem-somos">
+        <div class="sobreposicao text-center p-5 text-dark">
+            <h2 class="display-4 text-info pt-5">Quem Somos?</h2>
+            <hr class="bg-info">
+            <p class="lead text-dark col-lg-6 offset-lg-3 p-5">Somos uma empresa de tecnologia com ênfase em programação de computadores e desenvolvimento de software. Conheça nossos <a href="produtos.html" class="text-info">produtos</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        2022 | Todos os direitos reservados.
+    </footer>
+
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

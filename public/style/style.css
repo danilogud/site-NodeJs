@@ -1,0 +1,146 @@
+/* Código das cores obtidos em: https://color.adobe.com/pt/create/color-wheel 
+*/
+
+/* Remoção das propriedades margin e paddin padrão dos navegadores*/
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family: "Georgia";
+    color:#111;
+}
+
+a{
+    color:#510aa8;
+}
+
+header{
+    height:80px;
+    background-color: #111;
+}
+
+.container img {
+    max-width: 120px;
+    float:left;
+    margin-bottom:10px;
+}
+
+td img{
+    width: 25px;
+    max-width: 120px;
+    height: 25px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+nav a{
+    color:#f4f4f4;
+    text-decoration: none; /* remoção da sublinha do link */
+    padding: 30px 20px ;
+}
+
+nav a:hover{
+    background-color: #31d1bb;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2 {
+    color: #111;
+    font-size: 50px;
+    text-align: center;
+}
+
+h5{
+    color:#777;
+    padding: 5px 0 0 5px;
+}
+
+p {
+    color: #111;
+    font-size: 20px;
+    text-align: justify;  
+
+}
+article{
+    padding:30px 0;
+}
+
+label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer{
+    text-align:center;
+    background-color: #31d1bb;
+    margin-top: 50px;
+    padding: 20px 0;
+    color:#111;
+    position:absolute;
+    clear: both;
+    width: 100%;
+}
+
+input{
+    width:calc(100% - 20px); /*calc determina o tamanho máximo*/
+    padding:10px;
+}
+
+textarea{
+    width:calc(100% - 20px);
+    padding: 10px;
+}
+
+#cabecalho-interno{
+    padding:50px;
+    background-color:#ccc;
+}
+
+#quem-somos{
+    min-height: 600px;
+    background-image: url('../img/gui-g724693a14_1280.png');
+    background-position: center;
+    background-size: calc(100%);
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    background-image: var(100% - 20px);
+}
+
+#logo-navb {
+    width:50px;
+}
+.sobrepocicao{
+    min-height: 600px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container{ /*Colocou-se margem em todos os dois containers, dando impressão de centralização*/
+    width:960px;
+    margin: 0 auto;
+}
+.btn-enviar{
+    background-color: #02bb1a;
+    border:solid 1px #016b0f;
+    color:white;
+    padding:20px;
+    width:100%;
+}
+
+.linha{
+    margin:10px 0 20px 0;
+    width:100%;
+    
+}
+
+.coluna{
+    width: 50%;
+    float:left;;
+}

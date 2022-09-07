@@ -1,0 +1,47 @@
+    <div id="cabecalho-interno">
+            <div class="container">
+                <h1>CONTATO</h1>
+                <h5>Use o seguinte formulário para entrar em contato com nosso atendimento</h5>
+            </div>
+    </div>
+   
+
+    <article class="container">
+
+      <form name ="formulario_contato" method ="POST" action="/admin/contact" enctype="multipart/form-data">
+
+        <div class="linha">
+            <label>Nome Completo</label> <br>
+            <input type="text" name="name" size="50" placeholder="Digite seu nome completo">
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                <label>E-mail</label> <br>
+                <input type="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+
+            <div class="coluna">
+                <label>Telefone</label> <br>
+                <input type="number" name="phoneNumber" placeholder="Digite seu telefone"></input>
+            </div>
+
+            <div style="clear:both"></div> <!-- Esse ponto é necessário para impedir que a próxima div entre em colapso -->
+
+            <div class="linha">
+                <label>Assunto</label> <br>
+                <input type="text" name="subject" size="50" placeholder="Informe o assunto">
+            </div>
+
+            <div class="linha">
+                <label>Mensagem</label> <br>
+                <textarea name="message" placeholder="Digite a mensagem" rows="5" cols="50"></textarea>
+            </div>
+
+            <div class="linha">
+                <input type="submit" name="submit" value="Enviar mensagem" class="btn-enviar">
+            </div>
+        
+    </form>
+</article>
+
